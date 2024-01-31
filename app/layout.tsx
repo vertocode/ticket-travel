@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 
 // components
 import Header from "@/components/Header/Header"
+import StoreProvider from "@/components/StoreProvider"
 
 // styles
 import "@/styles/globals.scss"
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        {children}
+        <StoreProvider>
+            <Header />
+            {children}
+        </StoreProvider>
       </body>
     </html>
   )
