@@ -5,6 +5,10 @@
   flex-direction: column;
   gap: 1em;
 
+  .title {
+    margin: 0
+  }
+
   .filters-header {
     display: flex;
     justify-content: space-between;
@@ -15,7 +19,6 @@
 
     .title {
       font-size: 1.5em;
-      margin: 0;
     }
 
     .clear-filters {

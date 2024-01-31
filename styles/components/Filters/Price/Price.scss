@@ -1,0 +1,27 @@
+.price {
+  .title {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  .prices {
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    text-wrap: avoid;
+    gap: .7em;
+
+    .price-button {
+      cursor: pointer;
+      color: #CED2DB;
+      padding: 8px;
+      border: 1px solid #d4d8df;
+      font-size: .9em;
+
+      &.active {
+        color: #fff;
+        background-color: #4070F4;
+      }
+    }
+  }
+}
