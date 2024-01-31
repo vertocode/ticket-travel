@@ -1,5 +1,12 @@
+import '@/styles/Home.scss'
+import SearchInput from '@/components/SearchInput/SearchInput'
+
 export default function Home() {
   return (
-    <h1>home</h1>
+    <div className="home">
+        <header className="search-container">
+            <SearchInput />
+        </header>
+    </div>
   )
 }
