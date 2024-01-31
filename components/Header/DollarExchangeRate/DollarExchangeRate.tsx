@@ -4,7 +4,7 @@ import {ReactElement} from 'react'
 import support from '@/public/imgs/support.svg'
 
 // styles
-import '@/styles/DollarExchangeRate.scss'
+import '@/styles/components/Header/DollarExchangeRate/DollarExchangeRate.scss'
 
 // components
 import Image from 'next/image'

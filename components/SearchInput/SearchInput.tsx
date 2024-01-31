@@ -1,6 +1,6 @@
 import { ReactElement } from 'react'
 
-import "@/styles/SearchInput.scss"
+import "@/styles/components/SearchInput/SearchInput.scss"
 
 // components
 import Paper from '@mui/material/Paper';

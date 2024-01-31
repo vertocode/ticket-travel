@@ -4,29 +4,31 @@ import { ReactElement } from 'react'
 import logo from "@/public/imgs/logo.jpg"
 
 // styles
-import "@/styles/Header.scss"
+import "@/styles/components/Header/Header.scss"
 
 // Components
 import Image from 'next/image'
-import DollarExchangeRate from '@/components/DollarExchangeRate/DollarExchangeRate'
+import DollarExchangeRate from '@/components/Header/DollarExchangeRate/DollarExchangeRate'
 
 const Header = (): ReactElement => {
     const cartCount = 0
 
     return (
         <header className="header">
-            <div className="logo">
-                <Image height={ 30 } width={ 130 } alt="logo" src={ logo }/>
-            </div>
-            <div className="container">
-                <DollarExchangeRate />
-                <div className="log-in-button">
-                    <Image height={ 24 } width={ 24 } alt="log-in" src="/imgs/user.svg" />
-                    <span className="log-in-button-label">Entrar</span>
+            <div className="header-content">
+                <div className="logo">
+                    <Image height={ 30 } width={ 130 } alt="logo" src={ logo }/>
                 </div>
-                <div className="cart-button">
-                    <Image height={ 24 } width={ 24 } alt="cart" src="/imgs/cart.svg" />
-                    <span className="cart-button-label">{ cartCount }</span>
+                <div className="container">
+                    <DollarExchangeRate />
+                    <div className="log-in-button">
+                        <Image height={ 24 } width={ 24 } alt="log-in" src="/imgs/user.svg" />
+                        <span className="log-in-button-label">Entrar</span>
+                    </div>
+                    <div className="cart-button">
+                        <Image height={ 24 } width={ 24 } alt="cart" src="/imgs/cart.svg" />
+                        <span className="cart-button-label">{ cartCount }</span>
+                    </div>
                 </div>
             </div>
         </header>
