@@ -1,0 +1,14 @@
+.dollar-exchange-rate {
+  font-size: .8em;
+  font-weight: 450;
+  color: #6D7994;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .8em;
+  padding: .3em .8em;
+
+  .support-icon {
+    cursor: pointer;
+  }
+}
