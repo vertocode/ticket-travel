@@ -1,3 +1,28 @@
 .filters {
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 
+  .filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1em;
+    padding-bottom: .5em;
+    border-bottom: 1px solid #f4f4f4;
+
+    .title {
+      font-size: 1.5em;
+      margin: 0;
+    }
+
+    .clear-filters {
+      padding-top: 5px;
+      text-decoration: none;
+      color: #4E82C7;
+      font-size: 0.9em;
+    }
+  }
 }
