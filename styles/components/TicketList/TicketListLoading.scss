@@ -1,0 +1,54 @@
+.ticket-list-loading {
+  margin: 0;
+  list-style: none;
+  width: 100%;
+
+  .ticket-card-loading {
+    margin-bottom: 1em;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 2em;
+    background-color: #fff;
+
+    .ticket-image-loading {
+      width: 30%;
+      height: 100px;
+      margin-right: 1em;
+    }
+
+    .skeleton-box {
+      display: inline-block;
+      height: 1em;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      background-color: #DDDBDD;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateX(-100%);
+        background-image: linear-gradient(
+          90deg,
+          rgba(#fff, 0) 0,
+          rgba(#fff, 0.2) 20%,
+          rgba(#fff, 0.5) 60%,
+          rgba(#fff, 0)
+        );
+        animation: shimmer 3s infinite;
+        content: '';
+      }
+
+      @keyframes shimmer {
+        100% {
+          transform: translateX(100%);
+        }
+      }
+    }
+  }
+}
+
+

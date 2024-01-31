@@ -3,7 +3,9 @@ import {ReactElement} from 'react'
 // styles
 import '@/styles/components/TicketList/TicketList.scss'
 
-const TicketList = (): ReactElement => {
+const TicketList = async (): Promise<ReactElement> => {
+    await new Promise(resolve => setTimeout(resolve, 100232300))
+
     return (
         <div className="ticket-list">
             <h1>TicketList</h1>
