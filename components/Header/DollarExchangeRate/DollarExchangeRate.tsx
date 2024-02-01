@@ -9,6 +9,9 @@ import '@/styles/components/Header/DollarExchangeRate/DollarExchangeRate.scss'
 // components
 import Image from 'next/image'
 
+// utils
+import { formatCurrency } from "@/utils/currency";
+
 const getDollarExchangeRate = async (): Promise<number> => {
     try {
         const apiKey = process.env.EXCHANGE_RATE_API_KEY
@@ -41,7 +44,7 @@ const DollarExchangeRate = async (): Promise<ReactElement> => {
 
     return (
         <div className="dollar-exchange-rate">
-            <span>Cotação dólar hoje: R${ exchangeRate ? exchangeRate.toLocaleString('pt-BR') : '5,53' }</span>
+            <span>Cotação dólar hoje: { exchangeRate ? formatCurrency(exchangeRate) : '5,53' }</span>
             <Image src="/imgs/brazil.jpg" alt="brasil" width={ 30 } height={ 20 }/>
             <Image className="support-icon" src={ support } alt="support" width={ 24 } height={ 24 }/>
         </div>
