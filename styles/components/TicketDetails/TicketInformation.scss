@@ -1,0 +1,38 @@
+.ticket-information {
+  color: #9EA5B8;
+  line-height: 16px;
+  .ticket-review {
+    height: 6em;
+  }
+  .ticket-amenities {
+    display: flex;
+    margin-bottom: 2em;
+    font-size: .9em;
+    gap: 1em;
+    .item {
+      display: flex;
+      gap: .4em;
+    }
+  }
+
+  .ticket-description {
+    line-height: 22px;
+    h2 {
+      color: #0a2156;
+      font-size: 22px;
+    }
+  }
+
+  .ticket-location {
+    h2 {
+      margin-top: 1.5em;
+      color: #0a2156;
+      font-size: 22px;
+    }
+
+    .ticket-location-image {
+      position: relative;
+      height: 300px;
+    }
+  }
+}
