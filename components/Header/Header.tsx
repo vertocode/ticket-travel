@@ -8,6 +8,7 @@ import "@/styles/components/Header/Header.scss"
 
 // Components
 import Image from 'next/image'
+import Link from "next/link"
 import DollarExchangeRate from '@/components/Header/DollarExchangeRate/DollarExchangeRate'
 
 const Header = (): ReactElement => {
@@ -16,9 +17,9 @@ const Header = (): ReactElement => {
     return (
         <header className="header">
             <div className="header-content">
-                <div className="logo">
+                <Link href="/" className="logo">
                     <Image height={ 30 } width={ 130 } alt="logo" src={ logo }/>
-                </div>
+                </Link>
                 <div className="container">
                     <DollarExchangeRate />
                     <div className="log-in-button">

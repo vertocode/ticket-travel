@@ -110,7 +110,8 @@
         }
       }
       .see-more-button {
-        cursor: pointer;
+        border-radius: 3px;
+        text-decoration: none;
         display: flex;
         gap: 1em;
         align-items: center;

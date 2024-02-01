@@ -8,6 +8,7 @@ import type {Ticket} from "@/types/Ticket"
 
 // components
 import Image from "next/image"
+import Link from "next/link"
 
 // utils
 import {formatCurrency} from "@/utils/currency"
@@ -18,6 +19,7 @@ interface Props {
 
 const TicketCard = async ({ ticket }: Props): Promise<ReactElement> => {
     const {
+        id,
         image,
         name,
         location,
@@ -38,12 +40,12 @@ const TicketCard = async ({ ticket }: Props): Promise<ReactElement> => {
                         <h3 className="title">{ ticket.name }</h3>
                         <h4 className="location">
                             <Image src="/imgs/location.png" height={ 30 } width={ 30 } alt="image" />
-                            { ticket.location }
+                            { location }
                         </h4>
                     </div>
                     <div className="ticket-info-secondary">
                         <div className="ticket-review">
-                            { ticket.rating.value }
+                            { rating.value }
                         </div>
                         <div className="ticket-review-label">
                             Excellent
@@ -56,10 +58,10 @@ const TicketCard = async ({ ticket }: Props): Promise<ReactElement> => {
                         <p className="original-value">de R$ {formatCurrency(fullPrice)} por</p>
                         <p className="total-value"><span className="monetary">R$</span> <span>{formatCurrency(discountPrice)}</span> </p>
                     </div>
-                    <div className="see-more-button">
+                    <Link href={ `/ticket/${id}` } className="see-more-button">
                         <span>Saber mais</span>
                         <Image src="/imgs/right-arrow.png" alt="seta-direita" width={ 12 } height={ 12 }/>
-                    </div>
+                    </Link>
                 </div>
             </div>
         </div>
