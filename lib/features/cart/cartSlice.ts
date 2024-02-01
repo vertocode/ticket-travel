@@ -27,13 +27,12 @@ const cartSlice = createSlice({
     name: 'cart',
     initialState: initialState as CartState,
     reducers: {
-        // TODO: just a example, remove it!
-        // login(state, action) {
-        //     state.currentUser = action.payload
-        // }
+        deleteTicket(state, action) {
+            state.tickets = state.tickets.filter(ticket => ticket.id !== action.payload)
+        }
     }
 })
 
-export const { } = cartSlice.actions
+export const { deleteTicket } = cartSlice.actions
 
 export default cartSlice.reducer

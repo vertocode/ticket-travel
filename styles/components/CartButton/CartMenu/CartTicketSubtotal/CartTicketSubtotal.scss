@@ -1,3 +1,25 @@
 .cart-ticket-subtotal {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  line-height: 19px;
+  color: #868a9d;
 
+  .tickets-value,
+  .subtotal-value,
+  .discount-value,
+  .portion-value {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .subtotal-value {
+    color: #0A2156;
+    font-weight: 700;
+    line-height: 22px;
+  }
+
+  .percentage,
+  .discount-value-currency {
+    color: #00919e;
+  }
 }
