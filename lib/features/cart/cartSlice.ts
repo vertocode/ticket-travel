@@ -27,12 +27,15 @@ const cartSlice = createSlice({
     name: 'cart',
     initialState: initialState as CartState,
     reducers: {
+        addTicket(state, action) {
+            state.tickets.push(action.payload)
+        },
         deleteTicket(state, action) {
             state.tickets = state.tickets.filter(ticket => ticket.id !== action.payload)
         }
     }
 })
 
-export const { deleteTicket } = cartSlice.actions
+export const { deleteTicket, addTicket } = cartSlice.actions
 
 export default cartSlice.reducer

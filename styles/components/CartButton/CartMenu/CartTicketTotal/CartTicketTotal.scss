@@ -1,3 +1,14 @@
 .cart-ticket-total {
+  .total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #0A2156;
+    line-height: 22px;
 
+    .value {
+        color: #4070F4;
+    }
+  }
 }
