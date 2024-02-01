@@ -1,0 +1,1 @@
+export const tickets = (state) => state.cartReducer.tickets

@@ -1,0 +1,22 @@
+.cart-menu {
+  min-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px 24px 28px 24px;
+  background-color: white;
+  color: #0A1E31;
+  z-index: 10;
+  position: absolute;
+  top: 160%;
+  right: 0;
+
+  .title {
+    font-size: 1.1em;
+    text-align: left;
+  }
+
+  .empty-cart-message {
+    font-size: 1.2em;
+    color: #888;
+    margin-top: 10px;
+  }
+}

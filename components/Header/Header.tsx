@@ -10,10 +10,9 @@ import "@/styles/components/Header/Header.scss"
 import Image from 'next/image'
 import Link from "next/link"
 import DollarExchangeRate from '@/components/Header/DollarExchangeRate/DollarExchangeRate'
+import CartButton from '@/components/CartButton/CartButton'
 
 const Header = (): ReactElement => {
-    const cartCount = 0
-
     return (
         <header className="header">
             <div className="header-content">
@@ -26,10 +25,7 @@ const Header = (): ReactElement => {
                         <Image height={ 24 } width={ 24 } alt="log-in" src="/imgs/user.svg" />
                         <span className="log-in-button-label">Entrar</span>
                     </div>
-                    <div className="cart-button">
-                        <Image height={ 24 } width={ 24 } alt="cart" src="/imgs/cart.svg" />
-                        <span className="cart-button-label">{ cartCount }</span>
-                    </div>
+                    <CartButton />
                 </div>
             </div>
         </header>

@@ -32,28 +32,6 @@
                     font-weight: 700;
                 }
             }
-
-            .cart-button {
-                cursor: pointer;
-                background-color: #0345F3;
-                width: 90px;
-                height: 50px;
-                color: white;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 4px;
-                gap: .4em;
-
-                &-label {
-                    font-size: 1.2em;
-                    background-color: rgba(255, 255, 255, 0.08);
-                    padding: 4px 9px;
-                    border-radius: 50%;
-                    font-family: 'Inter', sans-serif;
-                    font-weight: 600;
-                }
-            }
         }
     }
 }
