@@ -15,6 +15,7 @@
       font-size: 0.77em;
     }
     &-heart {
+      cursor: pointer;
       position: absolute;
       top: 8px;
       right: 10px;
@@ -22,18 +23,23 @@
   }
 
   .ticket-container {
+    display: flex;
+    justify-content: space-between;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    padding: 0 24px;
+    height: 87%;
+    gap: 1em;
+    padding: 15px 24px;
 
     .ticket-info {
-      height: 100%;
+      height: 85%;
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
+      justify-content: space-between;
 
       &-principal {
+        margin: 10px 0;
         .title {
           margin: 0;
         }
@@ -48,8 +54,10 @@
 
       &-secondary {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         gap: 1em;
+        height: 100%;
+
         .ticket-review {
           width: max-content;
           padding: 10px;
@@ -57,6 +65,59 @@
           color: #C8D2EE;
           background-color: #4070F4;
         }
+
+        .ticket-review-label {
+          font-size: 14px;
+          color: #0A2156;
+
+          .number-reviews {
+            color: #9ea5b8;
+          }
+        }
+      }
+    }
+    .ticket-value {
+      border-left: 1px solid #f4f4f4;
+      padding: 2em;
+      font-size: .9em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      justify-content: center;
+
+      .values {
+        font-family: 'Inter', sans-serif;
+        .original-value {
+          margin-bottom: 2px;
+          color: #858FA6;
+        }
+        .total-value {
+          font-family: 'CircularStd', sans-serif;
+          margin-top: 0;
+          display: flex;
+          gap: 0.1em;
+          height: 1.5em;
+          color: #4070f4;
+          font-size: 1.5em;
+          align-items: flex-end;
+
+          .monetary {
+            font-family: 'Inter', sans-serif;
+            font-size: .7em;
+            color: #0a2156;
+            align-self: flex-start;
+          }
+        }
+      }
+      .see-more-button {
+        cursor: pointer;
+        display: flex;
+        gap: 1em;
+        align-items: center;
+        justify-content: center;
+        padding: .8em 2em;
+        color: #fff;
+        background-color: #4070F4;
       }
     }
   }
