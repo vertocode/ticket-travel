@@ -1,0 +1,55 @@
+.pagination {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1em;
+  align-items: center;
+
+  .count-tickets {
+    color: #828292;
+    font-size: .8em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+  }
+
+  .select-pagination {
+    color: #3e3f44;
+    font-size: .8em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    select {
+      width: 60px;
+      border-radius: 5px;
+      border: 1px solid #8a90bd;
+      color: #8a90bd;
+      padding: 4px 6px;
+    }
+  }
+
+  .MuiButtonBase-root, .ellipsis {
+    color: #455cc7;
+  }
+
+  .ellipsis {
+    cursor: pointer;
+    margin: 0 .4em;
+  }
+
+  .Mui-disabled {
+    cursor: not-allowed;
+    color: #022ffc;
+
+    .MuiSvgIcon-root {
+      font-size: 1.5em;
+    }
+  }
+
+  .Mui-selected {
+    font-weight: 600;
+    background-color: transparent;
+  }
+
+  .MuiSvgIcon-root {
+    font-size: 1em;
+  }
+}
