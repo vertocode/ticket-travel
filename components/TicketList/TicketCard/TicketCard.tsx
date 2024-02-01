@@ -9,6 +9,7 @@ import type {Ticket} from "@/types/Ticket"
 // components
 import Image from "next/image"
 import Link from "next/link"
+import TicketReview from "@/components/TicketReview/TicketReview"
 
 // utils
 import {formatCurrency} from "@/utils/currency"
@@ -43,15 +44,7 @@ const TicketCard = async ({ ticket }: Props): Promise<ReactElement> => {
                             { location }
                         </h4>
                     </div>
-                    <div className="ticket-info-secondary">
-                        <div className="ticket-review">
-                            { rating.value }
-                        </div>
-                        <div className="ticket-review-label">
-                            Excellent
-                            <span className="number-reviews"> ({ticket.rating.reviewsCount} Reviews)</span>
-                        </div>
-                    </div>
+                    <TicketReview ticket={ ticket }/>
                 </div>
                 <div className="ticket-value">
                     <div className="values">

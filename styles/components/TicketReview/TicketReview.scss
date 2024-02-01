@@ -1,0 +1,23 @@
+.ticket-review {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  height: 100%;
+
+  &-rating-value {
+    width: max-content;
+    padding: 10px;
+    border-radius: 5px;
+    color: #C8D2EE;
+    background-color: #4070F4;
+  }
+
+  &-label {
+    font-size: 14px;
+    color: #0A2156;
+
+    .number-reviews {
+      color: #9ea5b8;
+    }
+  }
+}
