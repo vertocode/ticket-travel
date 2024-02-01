@@ -35,7 +35,7 @@ const CartTicketDetails = ({ ticket }: Props): ReactElement => {
                 <p className="title">
                     <span>{ ticket.name } - {formatDate(ticket.createdAt)}</span>
                     <span className="delete-button" onClick={ handleDelete }>
-                        <Image src="imgs/trash.svg" alt="Deletar" width={ 20 } height={20}/>
+                        <Image src="/imgs/trash.svg" alt="Deletar" width={ 20 } height={20}/>
                     </span>
                 </p>
                 <p className="people">1 Adulto: R$500,00 2 2 Crianças: R$234,33</p>

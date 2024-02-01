@@ -1,3 +1,21 @@
 .ticket-header {
+  .title {
+    margin: 0;
+    height: 1.5em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
 
+    .image {
+      align-self: flex-start;
+    }
+  }
+
+  .location {
+    margin-top: .3em;
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    margin-left: 3.3em;
+  }
 }
