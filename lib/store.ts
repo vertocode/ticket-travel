@@ -1,12 +1,12 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit'
-import cartReducer from "@/lib/features/cart/cartSlice";
+import cartReducer from '@/lib/features/cart/cartSlice'
 
 export const makeStore = () => {
-    return configureStore({
-        reducer: combineReducers({
-            cartReducer
-        })
-    })
+	return configureStore({
+		reducer: combineReducers({
+			cartReducer
+		})
+	})
 }
 
 // Infer the type of makeStore

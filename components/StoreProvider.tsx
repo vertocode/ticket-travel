@@ -6,11 +6,11 @@ import { makeStore, AppStore } from '@/lib/store'
 type Properties = { children: React.ReactNode }
 
 export default function StoreProvider({ children }: Properties) {
-    const storeRef = useRef<AppStore>()
-    if (!storeRef.current) {
-        // Create the store instance the first time this renders
-        storeRef.current = makeStore()
-    }
+	const storeRef = useRef<AppStore>()
+	if (!storeRef.current) {
+		// Create the store instance the first time this renders
+		storeRef.current = makeStore()
+	}
 
-    return <Provider store={storeRef.current}>{children}</Provider>
+	return <Provider store={storeRef.current}>{children}</Provider>
 }
