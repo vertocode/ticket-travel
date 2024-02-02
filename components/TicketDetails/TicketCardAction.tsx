@@ -1,3 +1,4 @@
+'use client'
 import {ReactElement} from 'react'
 
 // styles
@@ -14,11 +15,26 @@ import Image from "next/image"
 import {formatDate} from "@/utils/date";
 import {formatCurrency} from "@/utils/currency";
 
+// hooks
+import {useAppDispatch} from "@/lib/hooks";
+import { useState } from 'react'
+
+// slices
+import { addTicket } from "@/lib/features/cart/cartSlice";
+
 interface Props {
     ticket: Ticket
 }
 
 const TicketCardAction = ({ ticket }: Props): ReactElement => {
+    const [showSuccessAlert, setShowSuccessAlert] = useState(false);
+    const dispatch = useAppDispatch()
+
+    const addToCart = () => {
+        dispatch(addTicket(ticket))
+        setShowSuccessAlert(true)
+    }
+
     return (
         <div className="ticket-card-action">
             <div className="ticket-date">
@@ -53,7 +69,14 @@ const TicketCardAction = ({ ticket }: Props): ReactElement => {
                     <span>Valor total</span>
                     <span className="value">{formatCurrency(ticket.price.discount)}</span>
                 </h3>
-                <div className="buy-ticket-button">Comprar Ingresso</div>
+                <div className="buy-ticket-button" onClick={ addToCart }>Comprar Ingresso</div>
+                {showSuccessAlert && (
+                    <div className="success">
+                        Adicionado ao Carrinho com sucesso!
+                        <span className="close-button" onClick={ () => setShowSuccessAlert(false) }>X</span>
+                    </div>
+                )}
+
             </div>
         </div>
     )
