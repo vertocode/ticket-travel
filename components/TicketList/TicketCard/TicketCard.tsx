@@ -10,6 +10,7 @@ import type {Ticket} from "@/types/Ticket"
 import Image from "next/image"
 import Link from "next/link"
 import TicketReview from "@/components/TicketReview/TicketReview"
+import Heart from "@/components/TicketList/TicketCard/Heart"
 
 // utils
 import {formatCurrency} from "@/utils/currency"
@@ -24,7 +25,6 @@ const TicketCard = async ({ ticket }: Props): Promise<ReactElement> => {
         image,
         name,
         location,
-        rating,
         price: { full: fullPrice, discount: discountPrice }
     } = ticket
 
@@ -33,7 +33,7 @@ const TicketCard = async ({ ticket }: Props): Promise<ReactElement> => {
             <div className="ticket-image">
                 <Image width={ 200 } height={ 250 } src={image} alt={name} />
                 <span className="ticket-image-label">Ingresso</span>
-                <Image className="ticket-image-heart" width={ 30 } height={ 30 } src="/imgs/heart.svg" alt="heart" />
+                <Heart />
             </div>
             <div className="ticket-container">
                 <div className="ticket-info">
