@@ -1,12 +1,29 @@
-.MuiPaper-root.searchInput {
-  box-shadow: none;
-  border: .8px solid #e0e0e0;
-  border-radius: 0;
+.search-field {
+  .MuiPaper-root.search-input {
+    box-shadow: none;
+    border: .8px solid #e0e0e0;
+    border-radius: 0;
 
- .locationIcon {
-   padding: 10px 0 10px 10px;
- }
-  .searchIcon {
-    padding: 10px;
+    .locationIcon {
+      padding: 10px 0 10px 10px;
+    }
+    .search-icon {
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      padding: 10px;
+    }
+  }
+
+  .helper-text {
+    margin-left: 5%;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #6D7994;
+
+    a {
+      color: #2e5ad7;
+      text-decoration: none;
+    }
   }
 }

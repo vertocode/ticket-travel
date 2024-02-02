@@ -15,7 +15,7 @@ import {Suspense} from "react";
 import Skeleton from '@mui/material/Skeleton';
 
 const TicketList = (): ReactElement => {
-    const { tickets, loading, error } = useTicketsFetch()
+    const { tickets, loading, error, showPagination } = useTicketsFetch()
 
     return (
         <div className="ticket-list">
@@ -24,9 +24,11 @@ const TicketList = (): ReactElement => {
                 ? <TicketListLoading />
                 : tickets.map(ticket => <TicketCard key={ticket.id} ticket={ticket} />)
             }
-            <Suspense fallback={ <Skeleton /> }>
-                <Pagination />
-            </Suspense>
+            { showPagination &&
+                <Suspense fallback={ <Skeleton /> }>
+                    <Pagination />
+                </Suspense>
+            }
         </div>
     )
 }
