@@ -18,7 +18,6 @@ import '@/styles/components/TicketList/Pagination/Pagination.scss'
 
 const PaginationComponent = (): ReactElement => {
 	const router = useRouter()
-	console.log(router)
 
 	const { countPages, page, isExpanded, setIsExpanded, count } = usePagination()
 

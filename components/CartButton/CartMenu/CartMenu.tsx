@@ -36,7 +36,7 @@ const CartMenu = ({ tickets }: Props): ReactElement => {
 					<div className="check-out-button">Ir para o check out</div>
 				</>
 			) : (
-				<div className="empty-cart-message">Não há ingressos no carrinho.</div>
+				<div data-testid="empty-cart-message" className="empty-cart-message">Não há ingressos no carrinho.</div>
 			)}
 		</div>
 	)

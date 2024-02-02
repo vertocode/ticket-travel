@@ -8,13 +8,15 @@ import '@/styles/components/CartButton/CartButton.scss'
 // components
 import CartMenu from '@/components/CartButton/CartMenu/CartMenu'
 import { useAppSelector } from '@/lib/hooks'
-import { tickets } from '@/lib/features/cart/cartSelectors'
 
 // hooks
 import { useState } from 'react'
 
 // types
 import { TicketCart } from '@/types/CartState'
+
+// selectors
+import { tickets } from '@/lib/features/cart/cartSelectors'
 
 const CartButton = (): ReactElement => {
 	const [showMenu, setShowMenu] = useState(false)
