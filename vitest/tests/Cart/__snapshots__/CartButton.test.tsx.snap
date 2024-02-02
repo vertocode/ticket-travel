@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match snapshot when there are no tickets 1`] = `
+<div>
+  <div
+    class="cart-button"
+  >
+    <div
+      class="cart-button-action"
+    >
+      <img
+        alt="cart"
+        data-nimg="1"
+        decoding="async"
+        height="24"
+        loading="lazy"
+        src="/imgs/cart.svg"
+        style="color: transparent;"
+        width="24"
+      />
+      <span
+        class="cart-button-action-label"
+        data-testid="cart-button-action-label"
+      >
+        0
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should match snapshot when there are tickets 1`] = `
+<div>
+  <div
+    class="cart-button"
+  >
+    <div
+      class="cart-button-action"
+    >
+      <img
+        alt="cart"
+        data-nimg="1"
+        decoding="async"
+        height="24"
+        loading="lazy"
+        src="/imgs/cart.svg"
+        style="color: transparent;"
+        width="24"
+      />
+      <span
+        class="cart-button-action-label"
+        data-testid="cart-button-action-label"
+      >
+        0
+      </span>
+    </div>
+  </div>
+</div>
+`;

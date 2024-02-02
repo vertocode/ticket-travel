@@ -7,11 +7,22 @@ import { addTicket } from '@/lib/features/cart/cartSlice'
 
 const tickets: TicketCart[] = cartItems.map(item => ({ ...item, quantity: 1 }))
 
-const { getByTestId, rerender, user, queryByTestId, store } =  renderWithProviders(<CartButton />)
+const { getByTestId, container, rerender, user, queryByTestId, store } =  renderWithProviders(<CartButton />)
+
+test('should match snapshot when there are no tickets', () => {
+	expect(container).toMatchSnapshot()
+})
 
 test('cart button shows the number of items when the cart is empty',  () => {
 	const button = getByTestId('cart-button-action-label')
 	expect(button.textContent).eq('0')
+})
+
+test('should match snapshot when there are tickets', () => {
+	// add 2 tickets and rerender the component
+	store.dispatch(addTicket(tickets[0]))
+	store.dispatch(addTicket(tickets[1]))
+	expect(container).toMatchSnapshot()
 })
 
 test('cart button shows the number of items when the cart have items',  () => {

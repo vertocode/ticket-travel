@@ -9,6 +9,7 @@ import { deleteTicket } from '@/lib/features/cart/cartSlice'
 const tickets: TicketCart[] = cartItems.map(item => ({ ...item, quantity: 1 }))
 
 const {
+	container,
 	getByTestId,
 	getAllByTestId,
 	rerender,
@@ -17,8 +18,18 @@ const {
 	store
 } = renderWithProviders(<CartMenu tickets={[]} />)
 
+test('should match snapshot when there are no tickets', () => {
+	expect(container).toMatchSnapshot()
+})
+
 test('cart menu should be rendered with a message when there are no tickets', () => {
 	expect(getByTestId('empty-cart-message').textContent).eq('Não há ingressos no carrinho.')
+})
+
+test('should match snapshot when there are tickets', () => {
+	const slicedTickets = tickets.slice(0, 2)
+	rerender(<CartMenu tickets={slicedTickets} />)
+	expect(container).toMatchSnapshot()
 })
 
 test('cart menu should be rendered with tickets', () => {

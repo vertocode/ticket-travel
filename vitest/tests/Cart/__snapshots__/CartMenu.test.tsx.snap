@@ -1,0 +1,270 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`should match snapshot when there are no tickets 1`] = `
+<div>
+  <div
+    class="cart-menu"
+    data-testid="cart-menu"
+  >
+    <h3
+      class="title"
+    >
+      Ingressos
+    </h3>
+    <div
+      class="empty-cart-message"
+      data-testid="empty-cart-message"
+    >
+      Não há ingressos no carrinho.
+    </div>
+  </div>
+</div>
+`;
+
+exports[`should match snapshot when there are tickets 1`] = `
+<div>
+  <div
+    class="cart-menu"
+    data-testid="cart-menu"
+  >
+    <h3
+      class="title"
+    >
+      Ingressos
+    </h3>
+    <div
+      class="cart-ticket-details"
+    >
+      <img
+        alt="Museu de Arte Moderna"
+        data-nimg="1"
+        decoding="async"
+        height="70"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FzD6RYYc7%2Fmuseu-de-arte.jpg&w=256&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FzD6RYYc7%2Fmuseu-de-arte.jpg&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fi.postimg.cc%2FzD6RYYc7%2Fmuseu-de-arte.jpg&w=256&q=75 2x"
+        style="color: transparent; object-fit: cover;"
+        width="70"
+      />
+      <div
+        class="cart-ticket-details-info"
+      >
+        <p
+          class="title"
+        >
+          <span>
+            Museu de Arte Moderna
+             - 
+            31/08/2022
+          </span>
+          <span
+            class="delete-button"
+            data-testid="delete-button"
+          >
+            <img
+              alt="Deletar"
+              data-nimg="1"
+              decoding="async"
+              height="20"
+              loading="lazy"
+              src="/imgs/trash.svg"
+              style="color: transparent;"
+              width="20"
+            />
+          </span>
+        </p>
+        <p
+          class="people"
+        >
+          1 Adulto: R$500,00 2 2 Crianças: R$234,33
+        </p>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+        />
+        <p
+          class="quantity-value"
+        >
+          <span>
+            Qtd 
+            1
+          </span>
+           
+          <span>
+            R$ 1.391,28
+          </span>
+        </p>
+        <p
+          class="sub-total"
+        >
+          <span>
+            Subtotal
+          </span>
+           
+          <span>
+            R$ 1.391,28
+          </span>
+        </p>
+      </div>
+    </div>
+    <div
+      class="cart-ticket-details"
+    >
+      <img
+        alt="Torre Eiffel"
+        data-nimg="1"
+        decoding="async"
+        height="70"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FJhFkqsSN%2Ftorre-eiffel.jpg&w=256&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fi.postimg.cc%2FJhFkqsSN%2Ftorre-eiffel.jpg&w=96&q=75 1x, /_next/image?url=https%3A%2F%2Fi.postimg.cc%2FJhFkqsSN%2Ftorre-eiffel.jpg&w=256&q=75 2x"
+        style="color: transparent; object-fit: cover;"
+        width="70"
+      />
+      <div
+        class="cart-ticket-details-info"
+      >
+        <p
+          class="title"
+        >
+          <span>
+            Torre Eiffel
+             - 
+            31/08/2022
+          </span>
+          <span
+            class="delete-button"
+            data-testid="delete-button"
+          >
+            <img
+              alt="Deletar"
+              data-nimg="1"
+              decoding="async"
+              height="20"
+              loading="lazy"
+              src="/imgs/trash.svg"
+              style="color: transparent;"
+              width="20"
+            />
+          </span>
+        </p>
+        <p
+          class="people"
+        >
+          1 Adulto: R$500,00 2 2 Crianças: R$234,33
+        </p>
+        <hr
+          class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+        />
+        <p
+          class="quantity-value"
+        >
+          <span>
+            Qtd 
+            1
+          </span>
+           
+          <span>
+            R$ 1.391,28
+          </span>
+        </p>
+        <p
+          class="sub-total"
+        >
+          <span>
+            Subtotal
+          </span>
+           
+          <span>
+            R$ 1.391,28
+          </span>
+        </p>
+      </div>
+    </div>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+    />
+    <div
+      class="cart-ticket-subtotal"
+    >
+      <p
+        class="tickets-value"
+      >
+        <span>
+          Ingressos
+        </span>
+        <span>
+          R$ 4.702,56
+        </span>
+      </p>
+      <p
+        class="subtotal-value"
+      >
+        <span>
+          Subtotal
+        </span>
+        <span>
+          R$ 4.702,56
+        </span>
+      </p>
+      <p
+        class="discount-value"
+      >
+        <span>
+          1X de 
+          R$ 2.782,56
+           com desconto de 
+          <span
+            class="percentage"
+          >
+            (
+            41
+            %)
+          </span>
+        </span>
+        <span
+          class="discount-value-currency"
+        >
+          -
+          R$ 1.920,00
+        </span>
+      </p>
+      <p
+        class="portion-value"
+      >
+        <span>
+          10X Sem juros de 
+          R$ 278,26
+        </span>
+        <span>
+          R$ 2.782,56
+        </span>
+      </p>
+    </div>
+    <hr
+      class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+    />
+    <div
+      class="cart-ticket-total"
+    >
+      <h3
+        class="total"
+      >
+        <span>
+          Valor total
+        </span>
+         
+        <span
+          class="value"
+        >
+          R$ 2.782,56
+        </span>
+      </h3>
+    </div>
+    <div
+      class="check-out-button"
+    >
+      Ir para o check out
+    </div>
+  </div>
+</div>
+`;
