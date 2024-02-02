@@ -1,0 +1,393 @@
+[
+  {
+    "id": "1",
+    "name": "Museu de Arte Moderna",
+    "location": "Rio de Janeiro, RJ",
+    "image": "https://i.postimg.cc/zD6RYYc7/museu-de-arte.jpg",
+    "description": "O Museu de Arte Moderna é um espaço cultural dedicado à exibição de obras de arte moderna e contemporânea, destacando-se pela diversidade de artistas e estilos.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "2",
+    "name": "Torre Eiffel",
+    "location": "Paris, França",
+    "image": "https://i.postimg.cc/JhFkqsSN/torre-eiffel.jpg",
+    "description": "A Torre Eiffel é um ícone da arquitetura mundial, situada em Paris, oferecendo uma vista deslumbrante da cidade luz a partir de seus diferentes níveis.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "3",
+    "name": "Praia de Copacabana",
+    "location": "Rio de Janeiro, RJ",
+    "image": "https://i.postimg.cc/pXB5SGgX/praia-de-copacabana.jpg",
+    "description": "A Praia de Copacabana é famosa por sua extensa faixa de areia, águas tropicais e o calçadão movimentado, sendo um dos destinos turísticos mais populares do Brasil.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "4",
+    "name": "Coliseu de Roma",
+    "location": "Roma, Itália",
+    "image": "https://i.postimg.cc/Dz4Z7BYG/coliseu-de-roma.jpg",
+    "description": "O Coliseu de Roma é um anfiteatro histórico conhecido por sua arquitetura grandiosa, palco de espetáculos e batalhas na Roma Antiga.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "5",
+    "name": "Muralha da China",
+    "location": "Pequim, China",
+    "image": "https://i.postimg.cc/nr2V35My/muralha-da-china.jpg",
+    "description": "A Grande Muralha da China é uma maravilha arquitetônica e uma das estruturas mais famosas do mundo, construída para proteger contra invasões ao longo dos séculos.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "6",
+    "name": "Museu do Louvre",
+    "location": "Paris, França",
+    "image": "https://i.postimg.cc/PxktThDG/museu-de-louvre.jpg",
+    "description": "O Museu do Louvre é o maior museu de arte do mundo, abrigando uma vasta coleção que vai desde antiguidades até obras-primas renascentistas e arte contemporânea.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "7",
+    "name": "Grand Canyon",
+    "location": "Arizona, EUA",
+    "image": "https://i.postimg.cc/W1kL3CTs/grand-canyon.jpg",
+    "description": "O Grand Canyon é uma formação geológica espetacular, conhecida por suas imponentes rochas avermelhadas esculpidas pelo rio Colorado ao longo de milhões de anos.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "8",
+    "name": "Ópera de Sydney",
+    "location": "Sydney, Austrália",
+    "image": "https://i.postimg.cc/PJx0kFSs/opera-de-sydney.jpg",
+    "description": "A Ópera de Sydney é um ícone arquitetônico mundial, conhecida por sua estrutura distintiva em forma de conchas e por sediar performances artísticas de classe mundial.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "9",
+    "name": "Machu Picchu",
+    "location": "Cusco, Peru",
+    "image": "https://i.postimg.cc/fbqrfvw8/machu-picchu.jpg",
+    "description": "Machu Picchu é uma antiga cidade inca situada nas montanhas dos Andes, reconhecida como Patrimônio Mundial da UNESCO e uma das maravilhas do mundo.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "10",
+    "name": "Templo de Angkor Wat",
+    "location": "Siem Reap, Camboja",
+    "image": "https://i.postimg.cc/gJ0gwL83/templo-de-angkor-wat.jpg",
+    "description": "O Templo de Angkor Wat é o maior templo religioso do mundo, com uma arquitetura deslumbrante e significado histórico na civilização khmer.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "11",
+    "name": "Parque Nacional Yellowstone",
+    "location": "Wyoming, EUA",
+    "image": "https://i.postimg.cc/7ZxtvRhB/parque-naciona-yellowstone.jpg",
+    "description": "O Parque Nacional de Yellowstone é famoso por suas fontes termais, gêiseres e vida selvagem diversificada, sendo o primeiro parque nacional do mundo.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "12",
+    "name": "Catedral de São Basílio",
+    "location": "Moscou, Rússia",
+    "image": "https://i.postimg.cc/V6MW095r/catedral-de-sao-basilio.jpg",
+    "description": "A Catedral de São Basílio é um ícone da arquitetura russa, conhecida por suas cúpulas coloridas e localizada na Praça Vermelha, em Moscou.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "13",
+    "name": "Monte Everest",
+    "location": "Himalaias, Nepal",
+    "image": "https://i.postimg.cc/3NFjnKX3/monte-everest.jpg",
+    "description": "O Monte Everest é a montanha mais alta do mundo, atraindo alpinistas e aventureiros de todo o mundo para desafiar seus picos cobertos de neve.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "14",
+    "name": "Ilha de Páscoa",
+    "location": "Rapa Nui, Chile",
+    "image": "https://i.postimg.cc/kMst1hrM/ilha-de-pascoa.jpg",
+    "description": "A Ilha de Páscoa é conhecida por suas estátuas de pedra gigantes, chamadas moais, que representam uma expressão única da cultura polinésia.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "15",
+    "name": "Cataratas do Iguaçu",
+    "location": "Foz do Iguaçu, Brasil",
+    "image": "https://i.postimg.cc/bJTd5dBV/cataratas-do-iguacu.jpg",
+    "description": "As Cataratas do Iguaçu são uma maravilha natural com uma série impressionante de quedas d'água na fronteira entre Brasil e Argentina.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "16",
+    "name": "Palácio de Versalhes",
+    "location": "Versalhes, França",
+    "image": "https://i.postimg.cc/3RKx2YxX/palacio-de-versalhes.jpg",
+    "description": "O Palácio de Versalhes é um magnífico palácio real conhecido por seus jardins deslumbrantes e arquitetura opulenta, localizado nos arredores de Paris.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "17",
+    "name": "Parque Nacional Serengeti",
+    "location": "Norte da Tanzânia",
+    "image": "https://i.postimg.cc/ydQs9R5K/parque-nacional-serengeti.jpg",
+    "description": "O Parque Nacional Serengeti é famoso por sua vida selvagem espetacular, incluindo a Grande Migração de gnus e zebras, criando um espetáculo impressionante.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "18",
+    "name": "Monte Fuji",
+    "location": "Honshu, Japão",
+    "image": "https://i.postimg.cc/kMH7gxKF/monte-fuji.jpg",
+    "description": "O Monte Fuji é um vulcão icônico e a montanha mais alta do Japão, oferecendo vistas deslumbrantes e sendo reverenciado na cultura japonesa.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "19",
+    "name": "Praia de Anse Lazio",
+    "location": "Praslin, Seychelles",
+    "image": "https://i.postimg.cc/766yx6LW/praia-anse-lazio.jpg",
+    "description": "Anse Lazio é uma praia paradisíaca com areias brancas e águas cristalinas, situada em uma ilha tropical no Oceano Índico.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "20",
+    "name": "Monte Kilimanjaro",
+    "location": "Tanzânia",
+    "image": "https://i.postimg.cc/WpxtHRWv/monte-kilimanjaro.jpg",
+    "description": "O Monte Kilimanjaro é a montanha mais alta da África, destacando-se por suas geleiras no topo e oferecendo uma aventura desafiadora para os alpinistas.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "21",
+    "name": "Palácio de Potala",
+    "location": "Lassa, Tibete",
+    "image": "https://i.postimg.cc/dVY3J2cN/palacio-de-potala.jpg",
+    "description": "O Palácio de Potala é uma impressionante fortaleza e palácio no Tibete, conhecido por sua arquitetura única e por ser um Patrimônio Mundial da UNESCO.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "22",
+    "name": "Parque Nacional de Banff",
+    "location": "Alberta, Canadá",
+    "image": "https://i.postimg.cc/sxWfrX6R/parque-nacional-banff.jpg",
+    "description": "O Parque Nacional de Banff é um paraíso natural com montanhas majestosas, lagos cristalinos e uma variedade abundante de vida selvagem nas Montanhas Rochosas.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  },
+  {
+    "id": "23",
+    "name": "Teatro Colón",
+    "location": "Buenos Aires, Argentina",
+    "image": "https://i.postimg.cc/sDpfHMGY/teatro-colon.jpg",
+    "description": "O Teatro Colón é uma joia arquitetônica e uma das principais casas de ópera do mundo, reconhecido por sua acústica impecável e performances de classe mundial.",
+    "price": {
+      "full": 2351.28,
+      "discount": 1391.28
+    },
+    "rating": {
+      "reviewsCount": 345,
+      "value": 4.3
+    },
+    "createdAt": "2022-08-31T12:32:09.794Z",
+    "updatedAt": "2022-08-31T12:32:09.794Z"
+  }
+]

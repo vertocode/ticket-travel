@@ -16,6 +16,7 @@
   }
 
   .check-out-button {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,4 +34,8 @@
     color: #888;
     margin-top: 10px;
   }
+}
+
+.storybook-mode {
+  position: static;
 }

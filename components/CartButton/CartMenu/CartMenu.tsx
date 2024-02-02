@@ -15,11 +15,12 @@ import CartTicketTotal from './CartTicketTotal/CartTicketTotal'
 
 interface Props {
     tickets: TicketCart[]
+	className?: string
 }
 
-const CartMenu = ({ tickets }: Props): ReactElement => {
+const CartMenu = ({ tickets, className }: Props): ReactElement => {
 	return (
-		<div className="cart-menu" data-testid="cart-menu">
+		<div className={`cart-menu ${className}`} data-testid="cart-menu">
 			<h3 className="title">Ingressos</h3>
 			{tickets.length ? (
 				<>
