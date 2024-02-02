@@ -19,15 +19,20 @@ const TicketList = (): ReactElement => {
 
 	return (
 		<div className="ticket-list">
-			{ error && <p className="error">{ error }</p> }
-			{ loading
+			{ !loading && error && <p className="error">{ error }</p> }
+			{ loading && !error
 				? <TicketListLoading />
 				: tickets.map(ticket => <TicketCard key={ticket.id} ticket={ticket} />)
 			}
-			{ showPagination && (
+			{ showPagination && tickets.length && (
 				<Suspense fallback={ <Skeleton /> }>
 					<Pagination />
 				</Suspense>
+			)}
+			{ !loading && !tickets.length && !error && (
+				<p className="empty-list-message">
+					No momento, não há ingressos disponíveis. Experimente ajustar seus critérios de busca para encontrar novas oportunidades emocionantes!
+				</p>
 			)}
 		</div>
 	)

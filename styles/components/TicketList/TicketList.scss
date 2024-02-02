@@ -1,5 +1,14 @@
 .ticket-list {
   display: flex;
   flex-direction: column;
-    gap: 1em;
+  gap: 1em;
+}
+
+.empty-list-message {
+  font-size: 1.5em;
+  text-align: center;
+  background-color: #0A2156;
+  color: #fff;
+  padding: 1em;
+  border-radius: 5px;
 }

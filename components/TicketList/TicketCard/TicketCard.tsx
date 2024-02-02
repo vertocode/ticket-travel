@@ -19,7 +19,7 @@ interface Props {
     ticket: Ticket
 }
 
-const TicketCard = async ({ ticket }: Props): Promise<ReactElement> => {
+const TicketCard = ({ ticket }: Props): ReactElement => {
 	const {
 		id,
 		image,

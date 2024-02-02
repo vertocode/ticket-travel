@@ -1,5 +1,5 @@
-import { ReadonlyURLSearchParams, useRouter, useSearchParams } from 'next/navigation'
-import React, { ReactNode, useCallback, useEffect, useState } from 'react'
+import { ReadonlyURLSearchParams, useSearchParams } from 'next/navigation'
+import { useCallback, useEffect, useState } from 'react'
 import { fetchAllTickets } from '@/services/fetchTickets'
 
 export const usePagination = () => {

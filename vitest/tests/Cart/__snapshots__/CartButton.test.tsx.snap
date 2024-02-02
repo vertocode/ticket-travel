@@ -51,7 +51,7 @@ exports[`should match snapshot when there are tickets 1`] = `
         class="cart-button-action-label"
         data-testid="cart-button-action-label"
       >
-        0
+        2
       </span>
     </div>
   </div>

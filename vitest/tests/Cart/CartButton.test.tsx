@@ -22,6 +22,7 @@ test('should match snapshot when there are tickets', () => {
 	// add 2 tickets and rerender the component
 	store.dispatch(addTicket(tickets[0]))
 	store.dispatch(addTicket(tickets[1]))
+	rerender(<CartButton /> )
 	expect(container).toMatchSnapshot()
 })
 

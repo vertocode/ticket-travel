@@ -61,8 +61,8 @@ const PaginationComponent = (): ReactElement => {
 
 	}, [countPages])
 
-	return (
-		<div className="pagination">
+	return count > 6 ? (
+		<div className="pagination" data-testid="pagination">
 			<span className="count-tickets">{count} Resultados</span>
 			<div className="select-pagination">
 				<label>
@@ -79,7 +79,7 @@ const PaginationComponent = (): ReactElement => {
 				renderItem={ renderItem }
 			/>
 		</div>
-	)
+	) : <></>
 }
 
 export default PaginationComponent

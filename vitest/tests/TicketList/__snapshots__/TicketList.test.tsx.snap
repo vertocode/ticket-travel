@@ -1,0 +1,206 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TicketList > should show the pagination when there are more than 6 tickets 1`] = `
+<div>
+  <div
+    class="ticket-list"
+  >
+    <ul
+      class="ticket-list-loading"
+    >
+      <li
+        class="ticket-card-loading"
+      >
+        <div
+          class="ticket-image-loading"
+        >
+          <span
+            class="skeleton-box"
+            style="width: 200px; height: 130px;"
+          />
+        </div>
+        <div
+          class="ticket-loading-body"
+        >
+          <h3>
+            <span
+              class="skeleton-box"
+              style="width: 80%;"
+            />
+            <span
+              class="skeleton-box"
+              style="width: 55%;"
+            />
+          </h3>
+          <p>
+            <span
+              class="skeleton-box"
+              style="width: 30%;"
+            />
+          </p>
+        </div>
+      </li>
+      <li
+        class="ticket-card-loading"
+      >
+        <div
+          class="ticket-image-loading"
+        >
+          <span
+            class="skeleton-box"
+            style="width: 200px; height: 130px;"
+          />
+        </div>
+        <div
+          class="ticket-loading-body"
+        >
+          <h3>
+            <span
+              class="skeleton-box"
+              style="width: 80%;"
+            />
+            <span
+              class="skeleton-box"
+              style="width: 55%;"
+            />
+          </h3>
+          <p>
+            <span
+              class="skeleton-box"
+              style="width: 30%;"
+            />
+          </p>
+        </div>
+      </li>
+      <li
+        class="ticket-card-loading"
+      >
+        <div
+          class="ticket-image-loading"
+        >
+          <span
+            class="skeleton-box"
+            style="width: 200px; height: 130px;"
+          />
+        </div>
+        <div
+          class="ticket-loading-body"
+        >
+          <h3>
+            <span
+              class="skeleton-box"
+              style="width: 80%;"
+            />
+            <span
+              class="skeleton-box"
+              style="width: 55%;"
+            />
+          </h3>
+          <p>
+            <span
+              class="skeleton-box"
+              style="width: 30%;"
+            />
+          </p>
+        </div>
+      </li>
+      <li
+        class="ticket-card-loading"
+      >
+        <div
+          class="ticket-image-loading"
+        >
+          <span
+            class="skeleton-box"
+            style="width: 200px; height: 130px;"
+          />
+        </div>
+        <div
+          class="ticket-loading-body"
+        >
+          <h3>
+            <span
+              class="skeleton-box"
+              style="width: 80%;"
+            />
+            <span
+              class="skeleton-box"
+              style="width: 55%;"
+            />
+          </h3>
+          <p>
+            <span
+              class="skeleton-box"
+              style="width: 30%;"
+            />
+          </p>
+        </div>
+      </li>
+      <li
+        class="ticket-card-loading"
+      >
+        <div
+          class="ticket-image-loading"
+        >
+          <span
+            class="skeleton-box"
+            style="width: 200px; height: 130px;"
+          />
+        </div>
+        <div
+          class="ticket-loading-body"
+        >
+          <h3>
+            <span
+              class="skeleton-box"
+              style="width: 80%;"
+            />
+            <span
+              class="skeleton-box"
+              style="width: 55%;"
+            />
+          </h3>
+          <p>
+            <span
+              class="skeleton-box"
+              style="width: 30%;"
+            />
+          </p>
+        </div>
+      </li>
+      <li
+        class="ticket-card-loading"
+      >
+        <div
+          class="ticket-image-loading"
+        >
+          <span
+            class="skeleton-box"
+            style="width: 200px; height: 130px;"
+          />
+        </div>
+        <div
+          class="ticket-loading-body"
+        >
+          <h3>
+            <span
+              class="skeleton-box"
+              style="width: 80%;"
+            />
+            <span
+              class="skeleton-box"
+              style="width: 55%;"
+            />
+          </h3>
+          <p>
+            <span
+              class="skeleton-box"
+              style="width: 30%;"
+            />
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

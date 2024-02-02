@@ -10,7 +10,7 @@ import { fetchTicketsByPagination, searchTickets } from '@/services/fetchTickets
 
 export const useTicketsFetch = () => {
 	const [tickets, setTickets] = useState<Ticket[]>([])
-	const [loading, setLoading] = useState<boolean>(false)
+	const [loading, setLoading] = useState<boolean>(true)
 	const [error, setError] = useState<string>('')
 	const [showPagination, setShowPagination] = useState(false)
 	const searchParams: ReadonlyURLSearchParams = useSearchParams()
