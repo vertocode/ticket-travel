@@ -2,18 +2,20 @@ import {ReactElement} from 'react'
 
 // styles
 import '@/styles/components/CartButton/CartMenu/CartTicketSubtotal/CartTicketSubtotal.scss'
-import {Ticket} from "@/types/Ticket";
+
+// types
+import {TicketCart} from "@/types/CartState";
 
 // utils
 import {formatCurrency} from "@/utils/currency";
 
 interface Props {
-    tickets: Ticket[]
+    tickets: TicketCart[]
 }
 
 const CartTicketSubtotal = ({ tickets }: Props): ReactElement => {
-    const total = tickets.reduce((acc, ticket) => acc + ticket.price.full, 0)
-    const totalWithDiscount = tickets.reduce((acc, ticket) => acc + ticket.price.discount, 0)
+    const total = tickets.reduce((acc, ticket) => acc + (ticket.price.full * ticket.quantity), 0)
+    const totalWithDiscount = tickets.reduce((acc, ticket) => acc + (ticket.price.discount * ticket.quantity), 0)
     const discountValue = total - totalWithDiscount
     const discountPercentage = (((total - totalWithDiscount) / total) * 100).toFixed(0)
     const portionValue = totalWithDiscount / 10

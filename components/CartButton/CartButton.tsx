@@ -13,9 +13,12 @@ import {tickets} from "@/lib/features/cart/cartSelectors";
 // hooks
 import {useState} from "react";
 
+// types
+import {TicketCart} from "@/types/CartState";
+
 const CartButton = (): ReactElement => {
     const [showMenu, setShowMenu] = useState(false);
-    const cartTickets = useAppSelector(tickets)
+    const cartTickets: TicketCart[] = useAppSelector(tickets)
 
     return (
         <div className="cart-button">

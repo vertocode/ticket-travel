@@ -3,9 +3,6 @@ import {ReactElement} from 'react'
 // styles
 import '@/styles/components/CartButton/CartMenu/CartTicketDetails/CartTicketDetails.scss'
 
-// types
-import type {Ticket} from "@/types/Ticket"
-
 // components
 import Divider from '@mui/material/Divider'
 import Image from 'next/image'
@@ -15,10 +12,16 @@ import {formatDate} from "@/utils/date"
 
 // hooks
 import {useAppDispatch} from "@/lib/hooks";
+
+// slices
 import {deleteTicket} from "@/lib/features/cart/cartSlice";
 
+// types
+import {TicketCart} from "@/types/CartState";
+import {formatCurrency} from "@/utils/currency";
+
 interface Props {
-    ticket: Ticket
+    ticket: TicketCart
 }
 
 const CartTicketDetails = ({ ticket }: Props): ReactElement => {
@@ -40,8 +43,8 @@ const CartTicketDetails = ({ ticket }: Props): ReactElement => {
                 </p>
                 <p className="people">1 Adulto: R$500,00 2 2 Crianças: R$234,33</p>
                 <Divider />
-                <p className="quantity-value"><span>Qtd 02</span> <span>R$ 734,33</span></p>
-                <p className="sub-total"><span>Subtotal</span> <span>{ticket.price.discount}</span></p>
+                <p className="quantity-value"><span>Qtd {ticket.quantity}</span> <span>{formatCurrency(ticket.price.discount)}</span></p>
+                <p className="sub-total"><span>Subtotal</span> <span>{formatCurrency(ticket.price.discount * ticket.quantity)}</span></p>
             </div>
         </div>
     )

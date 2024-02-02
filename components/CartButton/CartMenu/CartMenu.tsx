@@ -5,7 +5,7 @@ import {ReactElement} from 'react'
 import '@/styles/components/CartButton/CartMenu/CartMenu.scss'
 
 // types
-import type {Ticket} from "@/types/Ticket"
+import {TicketCart} from "@/types/CartState";
 
 // components
 import Divider from '@mui/material/Divider';
@@ -14,7 +14,7 @@ import CartTicketSubtotal from './CartTicketSubtotal/CartTicketSubtotal'
 import CartTicketTotal from './CartTicketTotal/CartTicketTotal'
 
 interface Props {
-    tickets: Ticket[]
+    tickets: TicketCart[]
 }
 
 const CartMenu = ({ tickets }: Props): ReactElement => {

@@ -6,36 +6,39 @@
   font-weight: 400;
   color: #646981;
 
-  .title {
-    margin: 0;
-    display: flex;
-    gap: 1em;
-    justify-content: space-between;
-    .delete-button {
-      border-radius: 50%;
-      cursor: pointer;
-      height: max-content;
-      &:hover {
-        background-color: rgba(198, 200, 210, 0.22);
+  &-info {
+    width: 80%;
+    .title {
+      margin: 0;
+      display: flex;
+      gap: 1em;
+      justify-content: space-between;
+      .delete-button {
+        border-radius: 50%;
+        cursor: pointer;
+        height: max-content;
+        &:hover {
+          background-color: rgba(198, 200, 210, 0.22);
+        }
       }
     }
-  }
 
-  .people {
-    margin: 10px 0;
-    font-size: .9em;
-    color: #989AA7;
-  }
+    .people {
+      margin: 10px 0;
+      font-size: .9em;
+      color: #989AA7;
+    }
 
-  .quantity-value, .sub-total {
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
-  }
+    .quantity-value, .sub-total {
+      display: flex;
+      justify-content: space-between;
+      gap: 2em;
+    }
 
-  .sub-total {
-    color: #0A2156;
-    line-height: 22px;
-    font-weight: 700;
+    .sub-total {
+      color: #0A2156;
+      line-height: 22px;
+      font-weight: 700;
+    }
   }
 }
