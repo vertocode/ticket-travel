@@ -1,1 +1,1 @@
-import './msw/setup.ts'
+import './msw/setup'
