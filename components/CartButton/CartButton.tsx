@@ -24,7 +24,11 @@ const CartButton = (): ReactElement => {
 		<div className="cart-button">
 			<div onClick={ () => setShowMenu(!showMenu) } className="cart-button-action">
 				<Image height={ 24 } width={ 24 } alt="cart" src="/imgs/cart.svg" />
-				<span className="cart-button-action-label">{ cartTickets.length }</span>
+				<span
+					className="cart-button-action-label"
+					data-testid="cart-button-action-label"
+				>{ cartTickets.length }
+				</span>
 			</div>
 
 			{ showMenu && <CartMenu tickets={ cartTickets }/> }

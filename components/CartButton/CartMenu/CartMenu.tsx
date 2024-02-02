@@ -19,7 +19,7 @@ interface Props {
 
 const CartMenu = ({ tickets }: Props): ReactElement => {
 	return (
-		<div className="cart-menu">
+		<div className="cart-menu" data-testid="cart-menu">
 			<h3 className="title">Ingressos</h3>
 			{tickets.length ? (
 				<>

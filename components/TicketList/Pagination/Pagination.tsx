@@ -12,11 +12,14 @@ import Link from 'next/link'
 import { usePagination } from '@/hooks/usePagination'
 import { useRouter } from 'next/navigation'
 
+
 // styles
 import '@/styles/components/TicketList/Pagination/Pagination.scss'
 
 const PaginationComponent = (): ReactElement => {
 	const router = useRouter()
+	console.log(router)
+
 	const { countPages, page, isExpanded, setIsExpanded, count } = usePagination()
 
 	const renderItem = useCallback((item: PaginationRenderItemParams): ReactNode => {
