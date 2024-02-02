@@ -1,7 +1,12 @@
 import { ReactElement } from 'react'
 import '@/styles/components/TicketReview/TicketReview.scss'
+import { Ticket } from '@/types/Ticket'
 
-const TicketReview = ({ ticket }): ReactElement => {
+interface Props {
+	ticket: Ticket
+}
+
+const TicketReview = ({ ticket }: Props): ReactElement => {
 	const { value, reviewsCount } = ticket.rating
 
 	return (

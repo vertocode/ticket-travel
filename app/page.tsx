@@ -7,12 +7,15 @@ import SearchInput from '@/components/SearchInput/SearchInput'
 import Filters from '@/components/Filters/Filters'
 import TicketList from '@/components/TicketList/TicketList'
 import TicketListLoading from '@/components/TicketList/TicketListLoading'
+import Skeleton from '@mui/material/Skeleton'
 
 export default function Home() {
 	return (
 		<div className="home">
 			<header className="search-container">
-				<SearchInput />
+				<Suspense fallback={<Skeleton />}>
+					<SearchInput />
+				</Suspense>
 			</header>
 			<main className="content">
 				<Filters />

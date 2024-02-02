@@ -5,11 +5,11 @@
  * This is the same that API is returning.
  */
 export const formatDate = (date: string) => {
-    const data = new Date(date)
+	const data = new Date(date)
 
-    return new Intl.DateTimeFormat('pt-BR', {
-        day: '2-digit',
-        month: '2-digit',
-        year: 'numeric'
-    }).format(data);
+	return new Intl.DateTimeFormat('pt-BR', {
+		day: '2-digit',
+		month: '2-digit',
+		year: 'numeric'
+	}).format(data)
 }
