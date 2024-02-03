@@ -15,6 +15,10 @@ import Heart from '@/components/TicketList/TicketCard/Heart'
 // utils
 import { formatCurrency } from '@/utils/currency'
 
+// images
+import locationImg from '@/public/imgs/location.png'
+import rightArrowImg from '@/public/imgs/right-arrow.png'
+
 interface Props {
     ticket: Ticket
 }
@@ -32,15 +36,17 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 		<div className="ticket-card">
 			<div className="ticket-image">
 				<Image width={ 200 } height={ 250 } src={image} alt={name} />
-				<span className="ticket-image-label">Ingresso</span>
-				<Heart />
+				<div className="ticket-absolute-container">
+					<span className="ticket-image-label">Ingresso</span>
+					<Heart />
+				</div>
 			</div>
 			<div className="ticket-container">
 				<div className="ticket-info">
 					<div className="ticket-info-principal">
 						<h3 className="title">{ ticket.name }</h3>
 						<h4 className="location">
-							<Image src="/imgs/location.png" height={ 30 } width={ 30 } alt="image" />
+							<Image src={ locationImg } height={ 30 } width={ 30 } alt="image" />
 							{ location }
 						</h4>
 					</div>
@@ -53,7 +59,7 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 					</div>
 					<Link href={ `/ticket/${id}` } className="see-more-button">
 						<span>Saber mais</span>
-						<Image src="/imgs/right-arrow.png" alt="seta-direita" width={ 12 } height={ 12 }/>
+						<Image src={ rightArrowImg } alt="seta-direita" width={ 12 } height={ 12 }/>
 					</Link>
 				</div>
 			</div>

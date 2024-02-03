@@ -2,6 +2,10 @@
 import { ReactElement, useState } from 'react'
 import Image from 'next/image'
 
+// images
+import heartImg from '@/public/imgs/heart.svg'
+import heartFilledImg from '@/public/imgs/heart-filled.svg'
+
 const Heart = (): ReactElement => {
 	const [isLiked, setIsLiked] = useState(false)
 
@@ -11,7 +15,7 @@ const Heart = (): ReactElement => {
 			className="ticket-image-heart"
 			width={ 30 }
 			height={ 30 }
-			src={isLiked ? '/imgs/heart-filled.svg' : '/imgs/heart.svg'}
+			src={isLiked ? heartFilledImg : heartImg }
 			alt="heart"
 		/>
 	)
