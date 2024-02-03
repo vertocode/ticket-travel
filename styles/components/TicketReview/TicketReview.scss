@@ -1,7 +1,7 @@
 .ticket-review {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: .4em;
   height: 100%;
 
   &-rating-value {
@@ -17,6 +17,7 @@
     color: #0A2156;
 
     .number-reviews {
+      margin-left: .5em;
       color: #9ea5b8;
     }
   }
