@@ -9,6 +9,9 @@
     "test": "vitest",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test:ci": "npm run lint && npm run test && npm run cypress:run",
     "build-storybook": "storybook build"
   },
   "dependencies": {
@@ -37,6 +40,7 @@
     "@types/react-dom": "^18",
     "@typescript-eslint/eslint-plugin": "^6.20.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "cypress": "^13.6.4",
     "eslint": "^8",
     "eslint-config-next": "14.1.0",
     "eslint-plugin-storybook": "^0.6.15",

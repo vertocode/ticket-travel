@@ -51,6 +51,7 @@ const SearchInput = (): ReactElement => {
 					<Image src="/imgs/location.png" alt="location" width={ 24 } height={ 24 } />
 				</div>
 				<InputBase
+					data-cy="search-input"
 					value={ search }
 					onChange={ (e) => setSearch(e.target.value) }
 					sx={{ ml: 1, flex: 1, borderRadius: '0' }}
@@ -58,7 +59,12 @@ const SearchInput = (): ReactElement => {
 					inputProps={{ 'aria-label': 'search google maps' }}
 				/>
 				<Divider sx={{ height: 46 }} orientation="vertical" />
-				<button type="submit" className="search-icon" onClick={ () => handleSearch }>
+				<button
+					type="submit"
+					className="search-icon"
+					data-cy="search-submit-button"
+					onClick={ () => handleSearch }
+				>
 					<Image src="/imgs/search.png" alt="search" width={ 24 } height={ 24 } />
 				</button>
 			</Paper>

@@ -40,7 +40,12 @@ const CartTicketDetails = ({ ticket }: Props): ReactElement => {
 			<div className="cart-ticket-details-info">
 				<p className="title">
 					<span>{ ticket.name } - {formatDate(ticket.createdAt)}</span>
-					<span className="delete-button" onClick={ handleDelete } data-testid="delete-button">
+					<span
+						className="delete-button"
+						onClick={ handleDelete }
+						data-testid="delete-button"
+						data-cy="delete-ticket-button"
+					>
 						<Image src={ trashImg } alt="Deletar" width={ 20 } height={20}/>
 					</span>
 				</p>

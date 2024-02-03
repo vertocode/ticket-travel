@@ -22,14 +22,20 @@ const CartButton = (): ReactElement => {
 	const [showMenu, setShowMenu] = useState(false)
 	const cartTickets: TicketCart[] = useAppSelector(tickets)
 
+	const totalTickets = cartTickets.reduce((acc, ticket) => acc + ticket.quantity, 0)
+
 	return (
 		<div className="cart-button">
-			<div onClick={ () => setShowMenu(!showMenu) } className="cart-button-action">
+			<div
+				onClick={ () => setShowMenu(!showMenu) }
+				className="cart-button-action"
+				data-cy="cart-button"
+			>
 				<Image height={ 24 } width={ 24 } alt="cart" src="/imgs/cart.svg" />
 				<span
 					className="cart-button-action-label"
 					data-testid="cart-button-action-label"
-				>{ cartTickets.length }
+				>{ totalTickets }
 				</span>
 			</div>
 

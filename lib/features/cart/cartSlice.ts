@@ -26,6 +26,19 @@ const cartSlice = createSlice({
 			}
 		},
 		deleteTicket(state, action) {
+			const isMoreThanOne = state.tickets.some(ticket => ticket.id === action.payload && ticket.quantity > 1)
+			if (isMoreThanOne) {
+				state.tickets = state.tickets.map(ticket => {
+					if (ticket.id === action.payload) {
+						return {
+							...ticket,
+							quantity: ticket.quantity - 1
+						}
+					}
+					return ticket
+				})
+				return
+			}
 			state.tickets = state.tickets.filter(ticket => ticket.id !== action.payload)
 		}
 	}

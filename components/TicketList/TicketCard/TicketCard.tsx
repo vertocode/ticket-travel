@@ -33,7 +33,7 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 	} = ticket
 
 	return (
-		<div className="ticket-card">
+		<div className="ticket-card" data-cy="ticket-card">
 			<div className="ticket-image">
 				<Image width={ 200 } height={ 250 } src={image} alt={name} />
 				<div className="ticket-absolute-container">
@@ -57,7 +57,7 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 						<p className="original-value">de R$ {formatCurrency(fullPrice)} por</p>
 						<p className="total-value"><span className="monetary">R$</span> <span>{formatCurrency(discountPrice)}</span> </p>
 					</div>
-					<Link href={ `/ticket/${id}` } className="see-more-button">
+					<Link href={ `/ticket/${id}` } data-cy="see-more-button" className="see-more-button">
 						<span>Saber mais</span>
 						<Image src={ rightArrowImg } alt="seta-direita" width={ 12 } height={ 12 }/>
 					</Link>

@@ -69,9 +69,9 @@ const TicketCardAction = ({ ticket }: Props): ReactElement => {
 					<span>Valor total</span>
 					<span className="value">{formatCurrency(ticket.price.discount)}</span>
 				</h3>
-				<div className="buy-ticket-button" onClick={ addToCart }>Comprar Ingresso</div>
+				<div data-cy="buy-ticket-button" className="buy-ticket-button" onClick={ addToCart }>Comprar Ingresso</div>
 				{showSuccessAlert && (
-					<div className="success">
+					<div className="success" data-cy="success-alert">
                         Adicionado ao Carrinho com sucesso!
 						<span className="close-button" onClick={ () => setShowSuccessAlert(false) }>X</span>
 					</div>
