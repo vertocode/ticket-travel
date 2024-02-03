@@ -67,7 +67,7 @@ const PaginationComponent = (): ReactElement => {
 			<div className="select-pagination">
 				<label>
 					<span>Página: </span>
-					<select onChange={ (e) => router.push(`?page=${e.target.value}`) }>
+					<select value={ page } onChange={ (e) => router.push(`?page=${e.target.value}`) }>
 						{ selectOptions() }
 					</select>
 				</label>
