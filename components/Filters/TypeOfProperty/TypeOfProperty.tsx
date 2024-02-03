@@ -2,11 +2,16 @@ import { ReactElement } from 'react'
 import Image from 'next/image'
 import '@/styles/components/Filters/TypeOfProperty/TypeOfProperty.scss'
 
+// images
+import casaImg from '@/public/imgs/casa.svg'
+import apartamentoImg from '@/public/imgs/apartamento.svg'
+import hotelImg from '@/public/imgs/hotel.svg'
+
 const TypeOfProperty = (): ReactElement => {
 	const typeOfPropertyConfig = [
-		{ type: 'casa', quantity: '346', src: '/imgs/casa.svg', active: true },
-		{ type: 'Apartamento', quantity: '234', src: '/imgs/apartamento.svg' },
-		{ type: 'Hotel', quantity: '23', src: '/imgs/hotel.svg' },
+		{ type: 'casa', quantity: '346', src: casaImg, active: true },
+		{ type: 'Apartamento', quantity: '234', src: apartamentoImg },
+		{ type: 'Hotel', quantity: '23', src: hotelImg },
 	]
 
 	return (

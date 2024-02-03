@@ -2,6 +2,9 @@ import { ReactElement } from 'react'
 import Image from 'next/image'
 import '@/styles/components/Filters/StarsOfProperty/StarsOfProperty.scss'
 
+// images
+import starImg from '@/public/imgs/star.png'
+
 const StarsOfProperty = (): ReactElement => {
 	const starsConfig = [
 		{ stars: 5, quantity: '134' },
@@ -18,7 +21,7 @@ const StarsOfProperty = (): ReactElement => {
 				{starsConfig.map((star, index) => (
 					<div key={index} className="star-button">
 						{new Array(star.stars).fill(0).map((_, index) => (
-							<Image key={index} src="/imgs/star.png" alt="star" width={24} height={24} />
+							<Image key={index} src={ starImg } alt="star" width={24} height={24} />
 						))}
 						<span className="quantity">({star.quantity})</span>
 					</div>
