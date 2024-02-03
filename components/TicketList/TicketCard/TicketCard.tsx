@@ -54,8 +54,8 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 				</div>
 				<div className="ticket-value">
 					<div className="values">
-						<p className="original-value">de R$ {formatCurrency(fullPrice)} por</p>
-						<p className="total-value"><span className="monetary">R$</span> <span>{formatCurrency(discountPrice)}</span> </p>
+						<p className="original-value">de {formatCurrency(fullPrice)} por</p>
+						<p className="total-value"><span className="monetary">R$</span> <span>{formatCurrency(discountPrice, { withCurrency: false })}</span> </p>
 					</div>
 					<Link href={ `/ticket/${id}` } data-cy="see-more-button" className="see-more-button">
 						<span>Saber mais</span>

@@ -86,11 +86,13 @@
           display: flex;
           gap: 0.1em;
           height: 1.5em;
+          font-weight: 700;
           color: #4070f4;
           font-size: 1.5em;
           align-items: flex-end;
 
           .monetary {
+            font-weight: 400;
             font-family: 'Inter', sans-serif;
             font-size: .7em;
             color: #0a2156;
