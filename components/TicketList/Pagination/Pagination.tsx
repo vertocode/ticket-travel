@@ -26,6 +26,7 @@ const PaginationComponent = (): ReactElement => {
 		const isNextButton = item.type === 'next'
 		if (!!item.page && item.page > countPages() -1 && !isExpanded && !isNextButton) {
 			return <span
+				data-cy="pagination-expand-button"
 				className={ isExpanded ? 'expanded' : 'ellipsis' }
 				onClick={ () => setIsExpanded(true) }
 			>{ isExpanded ? <PaginationItem {...item} /> : '...' }</span>
@@ -34,12 +35,13 @@ const PaginationComponent = (): ReactElement => {
 		// The only item that don't have a page it the button to expand the pagination
 		if (!item.page) {
 			return <span
+				data-cy="pagination-expand-button"
 				onClick={ () => setIsExpanded(true) }
 			><PaginationItem {...item} /></span>
 		}
 
 		return (
-			<Link href={`?page=${item.page}`}>
+			<Link data-cy="pagination-item" href={`?page=${item.page}`}>
 				<PaginationItem
 					slots={{ previous: ArrowBackIosIcon, next: ArrowForwardIosIcon }}
 					{...item}
@@ -67,7 +69,11 @@ const PaginationComponent = (): ReactElement => {
 			<div className="select-pagination">
 				<label>
 					<span>Página: </span>
-					<select value={ page } onChange={ (e) => router.push(`?page=${e.target.value}`) }>
+					<select
+						value={ page }
+						data-cy="pagination-select"
+						onChange={ (e) => router.push(`?page=${e.target.value}`) }
+					>
 						{ selectOptions() }
 					</select>
 				</label>
