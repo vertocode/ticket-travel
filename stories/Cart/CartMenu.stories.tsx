@@ -6,17 +6,17 @@ import { Provider } from 'react-redux'
 import { makeStore } from '@/lib/store'
 
 const store = makeStore()
-const cartTickets = tickets.map((ticket) => ({ ...ticket, quantity: 1 }))
+
+const cartTickets = tickets.map((ticket) => ({ ...ticket, quantity: 2 }))
 
 const meta = {
 	title: 'Cart/CartMenu',
 	component: CartMenu,
-	decorators: [
-		Story => (
-			<Provider store={store}>
-				<Story />
-			</Provider>)
-	],
+	decorators: [(Story) =>  (
+		<Provider store={store}>
+			<Story />
+		</Provider>
+	)],
 	parameters: {
 		layout: 'centered',
 	},
@@ -33,10 +33,16 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>;
 
-// More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
-export const Default: Story = {
+export const WithTickets: Story = {
 	args: {
-		tickets: cartTickets.slice(0, 2),
+		tickets: [...cartTickets.slice(2, 4)],
+		className: 'storybook-mode'
+	}
+}
+
+export const NoTickets: Story = {
+	args: {
+		tickets: [],
 		className: 'storybook-mode'
 	}
 }

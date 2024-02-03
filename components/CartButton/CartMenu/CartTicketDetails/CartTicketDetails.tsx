@@ -20,6 +20,9 @@ import { deleteTicket } from '@/lib/features/cart/cartSlice'
 import { TicketCart } from '@/types/CartState'
 import { formatCurrency } from '@/utils/currency'
 
+// images
+import trashImg from '@/public/imgs/trash.svg'
+
 interface Props {
     ticket: TicketCart
 }
@@ -38,7 +41,7 @@ const CartTicketDetails = ({ ticket }: Props): ReactElement => {
 				<p className="title">
 					<span>{ ticket.name } - {formatDate(ticket.createdAt)}</span>
 					<span className="delete-button" onClick={ handleDelete } data-testid="delete-button">
-						<Image src="/imgs/trash.svg" alt="Deletar" width={ 20 } height={20}/>
+						<Image src={ trashImg } alt="Deletar" width={ 20 } height={20}/>
 					</span>
 				</p>
 				<p className="people">1 Adulto: R$500,00 2 2 Crianças: R$234,33</p>
