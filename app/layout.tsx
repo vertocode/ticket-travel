@@ -9,7 +9,11 @@ import '@/styles/globals.scss'
 
 export const metadata: Metadata = {
 	title: 'Ticket Travel',
-	description: 'Buy you tickets now!'
+	applicationName: 'ticket-travel',
+	description: 'Buy you tickets now!',
+	creator: 'vertocode',
+	icons: [{ url: '/logo.png' }],
+	generator: 'Next.js'
 }
 
 export default function RootLayout({

@@ -9,6 +9,13 @@ import TicketList from '@/components/TicketList/TicketList'
 import TicketListLoading from '@/components/TicketList/TicketListLoading'
 import Skeleton from '@mui/material/Skeleton'
 
+// types
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+	title: 'Lista de ingressos - Ticket Travel'
+}
+
 export default function Home() {
 	return (
 		<div className="home">
