@@ -40,10 +40,13 @@ const cartSlice = createSlice({
 				return
 			}
 			state.tickets = state.tickets.filter(ticket => ticket.id !== action.payload)
+		},
+		clearTickets(state) {
+			state.tickets = []
 		}
 	}
 })
 
-export const { deleteTicket, addTicket } = cartSlice.actions
+export const { deleteTicket, addTicket, clearTickets } = cartSlice.actions
 
 export default cartSlice.reducer

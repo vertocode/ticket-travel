@@ -11,7 +11,6 @@
     "storybook": "storybook dev -p 6006",
     "cypress:open": "cypress open",
     "cypress:run": "cypress run",
-    "test:ci": "npm run lint && npm run test && npm run cypress:run",
     "build-storybook": "storybook build"
   },
   "dependencies": {

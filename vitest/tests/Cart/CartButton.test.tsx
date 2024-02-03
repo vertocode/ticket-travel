@@ -3,7 +3,7 @@ import CartButton from '@/components/CartButton/CartButton'
 import { renderWithProviders } from '@/vitest/utils/testUtils'
 import cartItems from '@/vitest/data/cartItems.json'
 import { TicketCart } from '@/types/CartState'
-import { addTicket } from '@/lib/features/cart/cartSlice'
+import { addTicket, clearTickets } from '@/lib/features/cart/cartSlice'
 
 const tickets: TicketCart[] = cartItems.map(item => ({ ...item, quantity: 1 }))
 
@@ -24,6 +24,7 @@ test('should match snapshot when there are tickets', () => {
 	store.dispatch(addTicket(tickets[1]))
 	rerender(<CartButton /> )
 	expect(container).toMatchSnapshot()
+	store.dispatch(clearTickets())
 })
 
 test('cart button shows the number of items when the cart have items',  () => {

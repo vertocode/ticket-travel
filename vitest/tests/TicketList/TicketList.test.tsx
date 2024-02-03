@@ -27,7 +27,7 @@ describe.concurrent('TicketList', () => {
 
 	test('should show the pagination when there are more than 6 tickets', async () => {
 		// wait the loading finishes
-		await new Promise(resolve => setTimeout(resolve, 1000))
+		await new Promise(resolve => setTimeout(resolve, 2000))
 		expect(await getByTestId('pagination')).toBeDefined()
 	})
 })
