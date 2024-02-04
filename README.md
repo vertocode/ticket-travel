@@ -6,7 +6,7 @@
 
 ## Principal Links
 - [Deployed App 🚀](https://travel.vertocode.com)
-- [Video Demo ▶️]()
+- [Video Demo ▶️](https://www.youtube.com/watch?v=mqPURm2KrIg&t=2s)
 
 ## Jump To
 - [Introduction](#introduction)
