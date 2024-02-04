@@ -37,6 +37,7 @@ const SearchInput = (): ReactElement => {
 
 	useEffect(() => {
 		setShowHelperText(!!searchUsed)
+		setSearch(searchUsed)
 	}, [searchParams, searchUsed])
 
 	return (
