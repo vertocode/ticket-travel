@@ -11,6 +11,7 @@ const Heart = (): ReactElement => {
 
 	return (
 		<Image
+			priority={ true }
 			onClick={() => setIsLiked(!isLiked)}
 			className="ticket-image-heart"
 			width={ 30 }

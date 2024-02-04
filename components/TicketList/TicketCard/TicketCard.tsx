@@ -35,7 +35,7 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 	return (
 		<div className="ticket-card" data-cy="ticket-card">
 			<div className="ticket-image">
-				<Image width={ 200 } height={ 250 } src={image} alt={name} />
+				<Image priority={ true } width={ 200 } height={ 250 } src={image} alt={name} />
 				<div className="ticket-absolute-container">
 					<span className="ticket-image-label">Ingresso</span>
 					<Heart />
@@ -46,7 +46,7 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 					<div className="ticket-info-principal">
 						<h3 className="title">{ ticket.name }</h3>
 						<h4 className="location">
-							<Image src={ locationImg } height={ 30 } width={ 30 } alt="image" />
+							<Image priority={ true } src={ locationImg } height={ 30 } width={ 30 } alt="image" />
 							{ location }
 						</h4>
 					</div>
@@ -59,7 +59,7 @@ const TicketCard = ({ ticket }: Props): ReactElement => {
 					</div>
 					<Link href={ `/ticket/${id}` } data-cy="see-more-button" className="see-more-button">
 						<span>Saber mais</span>
-						<Image src={ rightArrowImg } alt="seta-direita" width={ 12 } height={ 12 }/>
+						<Image priority={ true } src={ rightArrowImg } alt="seta-direita" width={ 12 } height={ 12 }/>
 					</Link>
 				</div>
 			</div>
