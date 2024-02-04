@@ -1,3 +1,4 @@
+'use client'
 // types
 import { ReactElement } from 'react'
 
